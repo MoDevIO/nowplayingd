@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "$@" >> ${CALLS_LOG:-/tmp/nowplayingd-calls.log}
+case "$1" in
+  --version) echo v2.4.1;;
+  metadata) printf 'Playing\037Song A\037Artist B\037Album C\037https://x/art.jpg\037200000000\03742000000\0370.650000\037false\037Playlist\037spotify\n';;
+esac

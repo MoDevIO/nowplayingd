@@ -1,0 +1,12 @@
+# ~/.config/nowplayingd/config.toml
+# Every key is optional; command-line flags (and HA_URL / HA_TOKEN env vars) override these.
+# This file holds your token, so keep it private:  chmod 600 ~/.config/nowplayingd/config.toml
+
+url = "http://homeassistant.local:8123"
+app_psw = "your-long-lived-access-token"
+# app_psw_file = "/run/secrets/ha-token"   # alternative: read the token from a file
+
+# name = "my_laptop"            # entity becomes media_player.my_laptop (default: hostname)
+# friendly_name = "My Laptop"   # display name in Home Assistant (default: hostname)
+# player = "spotify"            # only follow this player (playerctl --player syntax)
+# interval = 1000               # poll interval in ms
